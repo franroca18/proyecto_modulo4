@@ -6,7 +6,7 @@ from cloudant.query import Query
 import time
 
 
-def training_pipeline(path, model_info_db_name='models-db'):
+def training_pipeline(path, model_info_db_name='database-modulo4'):
     """
         Función para gestionar el pipeline completo de entrenamiento
         del modelo.
@@ -182,5 +182,5 @@ def load_model_config(db_name):
             dict. Documento con la configuración del modelo.
     """
     db = client.get_database(db_name)
-    query = Query(db, selector={'_id': {'$eq': 'model_config'}})
+    query = Query(db, selector={'_id': {'$eq': 'modulo4_config'}})
     return query()['docs'][0]

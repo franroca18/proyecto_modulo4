@@ -27,6 +27,8 @@ def create_domain_knowledge_features(df):
            DataFrame. Dataset.
     """
     # creación de variable Child de tipo booleana
-    df['Child'] = 0
-    df.loc[df.Age < 16, 'Child'] = 1
+    df['Sex_child'] = 0
+    df.loc[df.Age < 16, 'Sex_child'] = 1
+    df.loc[df.Age < 16, 'Sex_male'] = 0
+    df.loc[df.Age < 16, 'Sex_female'] = 0
     return df.copy()
