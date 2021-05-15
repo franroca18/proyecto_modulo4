@@ -74,7 +74,7 @@ def training_pipeline(path, model_info_db_name='database-modulo4'):
     put_best_model_in_production(metrics_dict, model_info_db_name)
 
 
-def save_model(obj, name, timestamp, bucket_name='models-uem'):
+def save_model(obj, name, timestamp, bucket_name='depositomodulo4'):
     """
         Función para guardar el modelo en IBM COS
 

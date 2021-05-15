@@ -21,7 +21,7 @@
         {
             "credentials": {
               "apikey": "6lmenW18JwP72JeHJ_ajbi8DM0hyFiBzAf60x9ZAWn2d",
-              "endpoints": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+              "endpoints": "https://s3.ap.cloud-object-storage.appdomain.cloud",
               "iam_apikey_description": "Auto-generated for key f4075fae-a6c3-4c74-b293-a918807d4ed2",
               "iam_apikey_name": "usuario",
               "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
